@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vraag 5</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+	 <script type = "text/javascript">
+        
+            function WriteCookie() {
+			   Answer7Result = escape(document.quiz.listen.value) + ";"; 
+               document.cookie = "MTTQ7=" + Answer7Result + "path=/";
+				
+			   Answer8Result = escape(document.quiz.discuss.value) + ";"; 
+               document.cookie = "MTTQ8=" + Answer8Result + "path=/";
+				
+			  Answer9Result = escape(document.quiz.sessions.value) + ";"; 
+               document.cookie = "MTTQ9=" + Answer9Result + "path=/";
+				
+				
+			   document.forms["quiz"].submit();
+            }
+			 
+			 
+      	</script>      
+	
+</head>
+
+<body>
+	<h3>Kun je ‘actief luisteren’ naar anderen?</h3>
+	
+<form action="q6.html" name = "quiz">
+	
+	<table style="width: 200px;" >
+<tbody>
+<tr>
+<td><label>
+  <input type="radio" name="listen" value="1" checked>
+  <img src="images/__v5-ja.png" width="200" height="150">
+	
+</label></td>
+<td><label>
+  <input type="radio" name="listen" value="2" checked>
+  <img src="images/__v5-soms.png" width="200" height="150">
+	
+	</label></td>
+<td><label>
+  <input type="radio" name="listen" value="3" checked>
+  <img src="images/__v5-nee.png" width="200" height="150">
+	
+</label></td>
+</tr>
+	</tbody>
+</table>
+	
+	<h3>Ben je in staat je eigen gedrag en dat van anderen bespreekbaar te maken?</h3>
+	
+	<table style="width: 200px;" >
+<tbody>
+<tr>
+<td><label>
+  <input type="radio" name="discuss" value="1" checked>
+  <img src="images/__v5-ja.png" width="200" height="150">
+	
+</label></td>
+<td><label>
+  <input type="radio" name="discuss" value="2" checked>
+  <img src="images/__v5-soms.png" width="200" height="150">
+	
+	</label></td>
+<td><label>
+  <input type="radio" name="discuss" value="3" checked>
+  <img src="images/__v5-nee.png" width="200" height="150">
+	
+</label></td>
+</tr>
+	</tbody>
+</table>
+	
+	<h3>Hoe vaak zijn er plenaire sessies in de organisatie of Management-medewerkers bijeenkomsten?</h3>
+	
+	<table style="width: 200px;" >
+<tbody>
+<tr>
+<td><label>
+  <input type="radio" name="sessions" value="1" checked>
+  <img src="images/__v6-week.png" width="200" height="150">
+	
+</label></td>
+<td><label>
+  <input type="radio" name="sessions" value="2" checked>
+  <img src="images/__v6-maand.png" width="200" height="150">
+	
+	</label></td>
+<td><label>
+  <input type="radio" name="sessions" value="3" checked>
+  <img src="images/__v6-halfjaar.png" width="200" height="150">
+	
+</label></td>
+<td><label>
+  <input type="radio" name="sessions" value="4" checked>
+  <img src="images/__v6-jaar.png" width="200" height="150">	
+</label></td>
+</tr>
+</tbody>
+</table>
+
+
+	
+<div>
+<a href="q4.html"><img src="images/prev.png" width="400" height="100" alt=""></a>
+<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="100" alt=""/></button>
+
+</div>
+
+</form>
+
+</body>
+</html>

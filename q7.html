@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Resultaten</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>	
+<h1>Een korte analyse op basis van de antwoorden die je hebt ingevuld:</h1>
+	<h2>
+		<script type = "text/javascript">
+		var Question1Answer = 0;
+		var Question2Answer = 0;
+		var Question3Answer = 0;
+		var Question4Answer = 0;
+		var Question5Answer = 0;
+		var Question6Answer = 0;
+		var Question7Answer = 0;
+		var Question8Answer = 0;
+		var Question9Answer = 0;
+		var Question10Answer = 0;
+		var Question11Answer = 0;
+		var Question12Answer = 0;
+			
+		var Question1Text = 0;
+		var Question2Text = 0;
+		var Question3Text = 0;
+		var Question4Text = 0;
+		var Question5Text = 0;
+		var Question6Text = 0;
+		var Question7Text = 0;
+		var Question8Text = 0;
+		var Question9Text = 0;
+		var Question10Text = 0;
+		var Question11Text = 0;
+		var Question12Text = 0;
+		
+		for(var i=1; i<=12; i++) 
+		{
+			var AnswerB = getCookie("MTTQ" + i.toString());	
+			
+			if(i==1){
+				Question1Answer=AnswerB;
+				switch(AnswerB) {
+					case "1": Question1Text="Leiderschap vanuit vertrouwen"; break;
+					case "2": Question1Text="Relatie tussen management, medewerkers en klanten"; break;
+					case "3": Question1Text="Missie, waarden, doelen, taken, verantwoordelijkheden"; break;
+					case "4": Question1Text="Onderlinge aandacht en begrip"; break;
+					case "5": Question1Text="(Zelf)reflectie en communicatie vanuit vertrouwen"; break;
+					default: Question1Text=""; break;
+				}
+			}
+			
+			if(i==2){
+				Question2Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question2Text="Autocratisch (directief en autoritair)"; break;
+					case "2": Question2Text="Resultaatgericht (directief en inspirerend)"; break;
+					case "3": Question2Text="Charismatisch (inspirerend en coachend)"; break;
+					case "4": Question2Text="Conflictueus (wantrouwend en autoritair)"; break;
+					case "5": Question2Text="Vermijdend (wantrouwend en terugtrekkend)"; break;
+					case "6": Question2Text="Passief (toegeeflijk en terugtrekkend)"; break;
+					case "7": Question2Text="Democratisch (toegeeflijk en participatief)"; break;
+					case "8": Question2Text="Mensgericht (participatief en coachend)"; break;
+					default: Question2Text=""; break;
+				}
+			}
+			
+			if(i==3){
+				Question3Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question3Text="Meer openheid en een cultuur van vertrouwen binnen de bedrijfsvoering."; break;
+					case "2": Question3Text="Vertrouwen is de basis van onze organisatie en dit dragen we uit in alles."; break;
+					case "3": Question3Text="Een brug slaan tussen het management en de medewerkers."; break;
+					case "4": Question3Text="Conflicten oplossen om te komen tot een next level binnen het MT en andere teams."; break;
+					case "5": Question3Text="Betrokkenheid, begrip en respect op alle afdelingen."; break;
+					case "6": Question3Text="Eigenaarschap en verantwoordelijkheid van ieder mens/persoon die in onze organisatie werkzaam is."; break;
+					case "7": Question3Text="Verbeteren van resultaten, meer rendement en omzet."; break;
+					case "8": Question3Text="Huidige onzekerheden voor lief nemen en kijken naar innovatie en nieuwe kansen die we concreet maken."; break;
+					default: Question3Text=""; break;
+				}
+			}
+			
+			if(i==4){
+				Question4Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question4Text="Nog niet"; break;
+					case "2": Question4Text="Regelmatig"; break;
+					case "3": Question4Text="Volledig"; break;
+					default: Question4Text=""; break;
+				}
+			}
+			
+			if(i==5){
+				Question5Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question5Text="Ja"; break;
+					case "2": Question5Text="Soms"; break;
+					case "3": Question5Text="Nee"; break;
+					default: Question5Text=""; break;
+				}								
+			}
+			
+			if(i==6){
+				Question6Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question6Text="Ja"; break;
+					case "2": Question6Text="Soms"; break;
+					case "3": Question6Text="Nee"; break;
+					default: Question6Text=""; break;
+				}								
+			}	
+			
+			if(i==7){
+				Question7Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question7Text="Ja"; break;
+					case "2": Question7Text="Soms"; break;
+					case "3": Question7Text="Nee"; break;
+					default: Question7Text=""; break;
+				}								
+			}	
+			
+			if(i==8){
+				Question8Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question8Text="Ja"; break;
+					case "2": Question8Text="Soms"; break;
+					case "3": Question8Text="Nee"; break;
+					default: Question8Text=""; break;
+				}								
+			}
+			
+			if(i==9){
+				Question9Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question9Text="1 keer per week"; break;
+					case "2": Question9Text="1 keer per maand"; break;
+					case "3": Question9Text="1 keer per half jaar"; break;
+					case "4": Question9Text="1 keer per jaar"; break;
+					default: Question9Text=""; break;
+				}								
+			}
+			
+			if(i==10){
+				Question10Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question10Text="Altijd"; break;
+					case "2": Question10Text="Vaak"; break;
+					case "3": Question10Text="Soms"; break;
+					case "4": Question10Text="Onvoldoende"; break;
+					default: Question10Text=""; break;
+				}								
+			}
+			
+			if(i==11){
+				Question11Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question11Text="Altijd"; break;
+					case "2": Question11Text="Vaak"; break;
+					case "3": Question11Text="Soms"; break;
+					case "4": Question11Text="Onvoldoende"; break;
+					default: Question11Text=""; break;
+				}								
+			}
+		
+			if(i==12){
+				Question12Answer=AnswerB;
+				switch (AnswerB) {
+					case "1": Question12Text="Altijd"; break;
+					case "2": Question12Text="Vaak"; break;
+					case "3": Question12Text="Soms"; break;
+					case "4": Question12Text="Onvoldoende"; break;
+					default: Question12Text=""; break;
+				}								
+			}
+				
+			if(i==12){
+				WriteResults();
+			}
+		}
+		
+			function WriteResults() {
+				
+				document.write ("Je antwoord op vraag 1 was " + Question1Text + "<br> Je antwoord op vraag 2 was " + Question2Text + "<br> Je antwoord op vraag 3 was " + Question3Text + "<br> Je antwoord op vraag 4 was " + Question4Text + "<br> Je antwoord op vraag 5 was " + Question5Text + "<br> Je antwoord op vraag 6 was " + Question6Text +
+				"<br> Je antwoord op vraag 7 was " + Question7Text + "<br> Je antwoord op vraag 8 was " + Question8Text) + "<br> Je antwoord op vraag 9 was " + Question9Text +
+				"<br> Je antwoord op vraag 10 was " + Question10Text + "<br> Je antwoord op vraag 11 was " + Question11Text + "<br> Je antwoord op vraag 12 was " + Question12Text);	
+				
+				if(Question1Answer==1){
+					
+					if(Question3Answer==1){
+						document.write ("Je bent een creatief persoon en je hebt een goede dag. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je houdt ervan om voor anderen te zorgen, zowel privé als op je werk. Je kunt je goed ontspannen of toch niet? Wil je meer weten over jezelf, speel dan de uitgebreide versie van het ‘Ik Ben puzzelspel’ onder deskundige begeleiding om meer inzicht in jezelf te krijgen.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je houdt van nauwkeurig te werk gaan tot in de details. Kan het zijn dat je je daar soms in verliest? Meer inzicht in jezelf? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Omdat je expressief bent, is het belangrijk om zelfbewust bij jezelf te leren blijven. Meer weten? Doe het uitgebreide IK Ben Puzzelspel onder begeleiding.");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Vol wilskracht sta je in het leven, vastberaden wat je wilt bereiken vandaag. Je wilt jezelf verder ontwikkelen. Dan is het spelen van de uitgebreide versie van dit puzzelspel een aanrader. Je krijgt onder begeleiding de juiste handvatten, praktisch en persoonlijk om bewuster te worden van jezelf en te realiseren wat je voor ogen hebt.");		
+						}
+					}
+					
+					if(Question3Answer==2){
+						document.write ("Je stelt je creatief op in gesprekken, maar vandaag lijkt het wel of er niet naar je geluisterd wordt. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je bent afwachtend en wat passief. Hoe ga je verder? Hoe kun je jezelf weer activeren? Doe dan de uitgebreidere versie onder deskundige begeleiding.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je bent vandaag wellicht argwanend en vindt het lastig om besluiten te nemen.  Hoe kan dat? Wat zou de oorzaak kunnen zijn? Meer inzicht? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Aangezien je geen goede dag hebt, kun je je chaotisch voelen. Wil je meer inzicht in jezelf? Doe dan de uitgebreide versie van het spel onder deskundige begeleiding.  ");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Ook wil je graag controle hebben op alles en voelt je boos of agressief worden, als dat niet lukt. Wil je weten hoe je dit kunt veranderen? Doe dan de uitgebreidere versie van dit spel onderdeskundige begeleiding.");		
+						}
+					}
+										
+				}
+				
+				if(Question1Answer==2){
+					
+					if(Question3Answer==1){
+						document.write ("Je bent beschouwend en voelt je daar prettig bij. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je houdt ervan om voor anderen te zorgen, zowel privé als op je werk. Je kunt je goed ontspannen of toch niet? Wil je meer weten over jezelf, speel dan de uitgebreide versie van het ‘Ik Ben puzzelspel’ onder deskundige begeleiding om meer inzicht in jezelf te krijgen.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je houdt van nauwkeurig te werk gaan tot in de details. Kan het zijn dat je je daar soms in verliest? Meer inzicht in jezelf? Doe dan de uitgebreidere versie van het IK BEN puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Omdat je expressief bent, is het belangrijk om zelfbewust bij jezelf te leren blijven. Meer weten? Doe het uitgebreide IK Ben Puzzelspel onder begeleiding.");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Vol wilskracht sta je in het leven, vastberaden wat je wilt bereiken vandaag. Je wilt jezelf verder ontwikkelen. Dan is het spelen van de uitgebreide versie van dit puzzelspel een aanrader. Je krijgt onder begeleiding de juiste handvatten, praktisch en persoonlijk om bewuster te worden van jezelf en te realiseren wat je voor ogen hebt.");		
+						}
+					}
+					
+					if(Question3Answer==2){
+						document.write ("Beschouwend bekijk je jouw leven vandaag met een donkere sluier. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je bent afwachtend en wat passief. Hoe ga je verder? Hoe kun je jezelf weer activeren? Doe dan de uitgebreidere versie onder deskundige begeleiding.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je bent vandaag wellicht argwanend en vindt het lastig om besluiten te nemen.  Hoe kan dat? Wat zou de oorzaak kunnen zijn? Waarom zou er niet naar je geluisterd worden vandaag? Meer inzicht? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Aangezien je geen goede dag hebt, kun je je chaotisch voelen. Wil je meer inzicht in jezelf? Doe dan de uitgebreide versie van het spel onder deskundige begeleiding.  ");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Ook wil je graag controle hebben op alles en voelt je boos of agressief worden, als dat niet lukt. Wil je weten hoe je dit kunt veranderen? Doe dan de uitgebreidere versie van dit spel onderdeskundige begeleiding.");		
+						}
+					}
+										
+				}
+				
+				if(Question1Answer==3){
+					
+					if(Question3Answer==1){
+						document.write ("Je bent een positief persoon en je hebt een goede dag. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je houdt ervan om voor anderen te zorgen, zowel privé als op je werk. Je kunt je goed ontspannen of toch niet? Wil je meer weten over jezelf, speel dan de uitgebreide versie van het ‘Ik Ben puzzelspel’ onder deskundige begeleiding om meer inzicht in jezelf te krijgen.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je houdt van nauwkeurig te werk gaan tot in de details. Kan het zijn dat je je daar soms in verliest? Meer inzicht in jezelf? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Omdat je expressief bent, is het belangrijk om zelfbewust bij jezelf te leren blijven. Meer weten? Doe het uitgebreide IK Ben Puzzelspel onder begeleiding.");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Vol wilskracht sta je in het leven, vastberaden wat je wilt bereiken vandaag. Je wilt jezelf verder ontwikkelen. Dan is het spelen van de uitgebreide versie van dit puzzelspel een aanrader. Je krijgt onder begeleiding de juiste handvatten, praktisch en persoonlijk om bewuster te worden van jezelf en te realiseren wat je voor ogen hebt.");		
+						}
+					}
+					
+					if(Question3Answer==2){
+						document.write ("Normaliter ben je positief gestemd, vandaag even niet. Waar komt dat door? ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je bent afwachtend en wat passief. Hoe ga je verder? Hoe kun je jezelf weer activeren? Doe dan de uitgebreidere versie onder deskundige begeleiding.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je bent vandaag wellicht argwanend en vindt het lastig om besluiten te nemen.  Hoe kan dat? Wat zou de oorzaak kunnen zijn? Waarom zou er niet naar je geluisterd worden vandaag? Meer inzicht? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Aangezien je geen goede dag hebt, kun je je chaotisch voelen. Wil je meer inzicht in jezelf? Doe dan de uitgebreide versie van het spel onder deskundige begeleiding.  ");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Ook wil je graag controle hebben op alles en voelt je boos of agressief worden, als dat niet lukt. Wil je weten hoe je dit kunt veranderen? Doe dan de uitgebreidere versie van dit spel onderdeskundige begeleiding.");		
+						}
+					}
+										
+				}
+				
+				if(Question1Answer==4){
+					
+					if(Question3Answer==1){
+						document.write ("Je bent een persoon die graag zijn/haar intuïtie en gevoel volgt ook in gesprekken met anderen. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je houdt ervan om voor anderen te zorgen, zowel privé als op je werk. Je kunt je goed ontspannen of toch niet? Wil je meer weten over jezelf, speel dan de uitgebreide versie van het ‘Ik Ben puzzelspel’ onder deskundige begeleiding om meer inzicht in jezelf te krijgen.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je houdt van nauwkeurig te werk gaan tot in de details. Kan het zijn dat je je daar soms in verliest? Meer inzicht in jezelf? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Omdat je expressief bent, is het belangrijk om zelfbewust bij jezelf te leren blijven. Meer weten? Doe het uitgebreide IK Ben Puzzelspel onder begeleiding.");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Vol wilskracht sta je in het leven, vastberaden wat je wilt bereiken vandaag. Je wilt jezelf verder ontwikkelen. Dan is het spelen van de uitgebreide versie van dit puzzelspel een aanrader. Je krijgt onder begeleiding de juiste handvatten, praktisch en persoonlijk om bewuster te worden van jezelf en te realiseren wat je voor ogen hebt.");		
+						}
+					}
+					
+					if(Question3Answer==2){
+						document.write ("Je voelt je vandaag niet zo lekker in je vel zitten. Alles is beladen en op gespannen voet. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je bent afwachtend en wat passief. Hoe ga je verder? Hoe kun je jezelf weer activeren? Doe dan de uitgebreidere versie onder deskundige begeleiding.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je bent vandaag wellicht argwanend en vindt het lastig om besluiten te nemen.  Hoe kan dat? Wat zou de oorzaak kunnen zijn? Waarom zou er niet naar je geluisterd worden vandaag? Meer inzicht? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Aangezien je geen goede dag hebt, kun je je chaotisch voelen. Wil je meer inzicht in jezelf? Doe dan de uitgebreide versie van het spel onder deskundige begeleiding.  ");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Ook wil je graag controle hebben op alles en voelt je boos of agressief worden, als dat niet lukt. Wil je weten hoe je dit kunt veranderen? Doe dan de uitgebreidere versie van dit spel onderdeskundige begeleiding.");		
+						}
+					}
+										
+				}
+				
+				if(Question1Answer==5){
+					
+					if(Question3Answer==1){
+						document.write ("In gesprekken wil je graag feiten horen en anders zorg je er wel voor dat de feiten op tafel komen. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je houdt ervan om voor anderen te zorgen, zowel privé als op je werk. Je kunt je goed ontspannen of toch niet? Wil je meer weten over jezelf, speel dan de uitgebreide versie van het ‘Ik Ben puzzelspel’ onder deskundige begeleiding om meer inzicht in jezelf te krijgen.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je houdt van nauwkeurig te werk gaan tot in de details. Kan het zijn dat je je daar soms in verliest? Meer inzicht in jezelf? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Omdat je expressief bent, is het belangrijk om zelfbewust bij jezelf te leren blijven. Meer weten? Doe het uitgebreide Ik Ben Puzzelspel onder begeleiding.");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Vol wilskracht sta je in het leven, vastberaden wat je wilt bereiken vandaag. Je wilt jezelf verder ontwikkelen. Dan is het spelen van de uitgebreide versie van dit puzzelspel een aanrader. Je krijgt onder begeleiding de juiste handvatten, praktisch en persoonlijk om bewuster te worden van jezelf en te realiseren wat je voor ogen hebt.");		
+						}
+					}
+					
+					if(Question3Answer==2){
+						document.write ("Je kunt je vinger er niet opleggen, maar om te zeggen ‘ik voel me happy’…… nou nee. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je bent afwachtend en wat passief. Hoe ga je verder? Hoe kun je jezelf weer activeren? Doe dan de uitgebreidere versie onder deskundige begeleiding.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je bent vandaag wellicht argwanend en vindt het lastig om besluiten te nemen.  Hoe kan dat? Wat zou de oorzaak kunnen zijn? Waarom zou er niet naar je geluisterd worden vandaag? Meer inzicht? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Aangezien je geen goede dag hebt, kun je je chaotisch voelen. Wil je meer inzicht in jezelf? Doe dan de uitgebreide versie van het spel onder deskundige begeleiding.  ");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Ook wil je graag controle hebben op alles en voelt je boos of agressief worden, als dat niet lukt. Wil je weten hoe je dit kunt veranderen? Doe dan de uitgebreidere versie van dit spel onderdeskundige begeleiding.");		
+						}
+					}
+										
+				}
+				
+				if(Question1Answer==6){
+					
+					if(Question3Answer==1){
+						document.write ("Ook al heb je een goede dag, dan nog kun je je negatief in een gesprek opstellen. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je houdt ervan om voor anderen te zorgen, zowel privé als op je werk. Je kunt je goed ontspannen of toch niet? Wil je meer weten over jezelf, speel dan de uitgebreide versie van het ‘Ik Ben puzzelspel’ onder deskundige begeleiding om meer inzicht in jezelf te krijgen.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je houdt van nauwkeurig te werk gaan tot in de details. Kan het zijn dat je je daar soms in verliest? Meer inzicht in jezelf? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Omdat je expressief bent, is het belangrijk om zelfbewust bij jezelf te leren blijven. Meer weten? Doe het uitgebreide IK Ben Puzzelspel onder begeleiding.");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Vol wilskracht sta je in het leven, vastberaden wat je wilt bereiken vandaag. Je wilt jezelf verder ontwikkelen. Dan is het spelen van de uitgebreide versie van dit puzzelspel een aanrader. Je krijgt onder begeleiding de juiste handvatten, praktisch en persoonlijk om bewuster te worden van jezelf en te realiseren wat je voor ogen hebt.");		
+						}
+					}
+					
+					if(Question3Answer==2){
+						document.write ("Heb je de laatste tijd last van negatieve gedachten en gevoelens? Zorg er dan voor, dat er weer lichtpunten in je leven ontstaan om je zelfvertrouwen op te bouwen. ");	
+						
+						if(Question4Answer==1){
+						document.write ("Je bent afwachtend en wat passief. Hoe ga je verder? Hoe kun je jezelf weer activeren? Doe dan de uitgebreidere versie onder deskundige begeleiding.");		
+						}
+						
+						if(Question4Answer==2){
+						document.write ("Je bent vandaag wellicht argwanend en vindt het lastig om besluiten te nemen.  Hoe kan dat? Wat zou de oorzaak kunnen zijn? Waarom zou er niet naar je geluisterd worden vandaag? Meer inzicht? Doe dan de uitgebreidere versie van dit puzzelspel.");		
+						}
+						
+						if(Question4Answer==3){
+						document.write ("Aangezien je geen goede dag hebt, kun je je chaotisch voelen. Wil je meer inzicht in jezelf? Doe dan de uitgebreide versie van het spel onder deskundige begeleiding.  ");		
+						}
+						
+						if(Question4Answer==4){
+						document.write ("Ook wil je graag controle hebben op alles en voelt je boos of agressief worden, als dat niet lukt. Wil je weten hoe je dit kunt veranderen? Doe dan de uitgebreidere versie van dit spel onderdeskundige begeleiding.");		
+						}
+					}				
+				}
+			}
+			
+			function getCookie(cname) {
+				var name = cname + "=";
+				var decodedCookie = decodeURIComponent(document.cookie);
+				var ca = decodedCookie.split(';');
+				for(var i = 0; i <ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+					}
+					if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+					}
+				}
+				return "";
+			}
+			 
+      	</script>   
+	</h2>	
+
+	
+<form action="q6.html" name = "quiz">
+	
+<div>
+	<br>
+<a href="q6.html"><img src="images/prev.png" width="400" height="100" alt=""></a>
+</div>
+
+</form>
+
+</body>
+</html>
