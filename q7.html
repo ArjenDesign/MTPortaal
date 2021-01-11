@@ -36,7 +36,7 @@
 		var Question11Text = 0;
 		var Question12Text = 0;
 		
-		for(var i=1; i<=12; i++) 
+		for(var i=1; i<=11; i++) 
 		{
 			var AnswerB = getCookie("MTTQ" + i.toString());	
 			
@@ -173,12 +173,11 @@
 					case "3": Question12Text="Soms"; break;
 					case "4": Question12Text="Onvoldoende"; break;
 					default: Question12Text=""; break;
+					WriteResults();
 				}								
 			}
 				
-			if(i==12){
-				WriteResults();
-			}
+		
 		}
 		
 			function WriteResults() {
